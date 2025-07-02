@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matches Killer Bot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Matches Killer Bot</h1>
+    <p>The Best Matches Analysis & Trading Tool</p>
+  </header>
+
+  <div class="container">
+    <h2>About the Bot</h2>
+    <p>
+      Matches Killer Bot is your ultimate binary trading weapon. It intelligently scans the market,
+      identifies the <strong>best entry points</strong>, and executes trades with <strong>deadly accuracy and very few losses</strong>.
+      Designed for the Matches and Volatility markets, it is fast, reliable, and easy to use.
+    </p>
+    <ul>
+      <li>✅ Smart Matches analysis built into the bot</li>
+      <li>✨ Real-time entry points</li>
+      <li>✅ Ultra-accurate trades with minimal losses</li>
+      <li>⚡ Fast execution</li>
+      <li>📄 Simple setup - no experience needed</li>
+    </ul>
+
+    <h2>Payment Instructions</h2>
+    <p class="price">
+      💰 <strong>Price: $200 USD</strong> (One-Time Payment)
+    </p>
+    <p class="note">
+      Instant delivery after payment. Secure your copy today!
+    </p>
+
+    <div class="till-box">
+      <strong>M-Pesa Till Number:</strong><br />
+      <span class="big">3406998</span><br/>
+      <a class="btn" href="https://wa.me/254724690381?text=Hi%2C%20I%20have%20paid%20via%20M-Pesa%20for%20Matches%20Killer%20Bot.%20Here%20is%20my%20screenshot." target="_blank">I’ve Paid via M-Pesa – Send Screenshot</a>
+    </div>
+
+    <div class="paypal-box">
+      <strong>Pay with PayPal:</strong><br />
+      <a class="btn" href="https://www.paypal.com/paypalme/qtropisaac14p" target="_blank">Pay with PayPal</a><br/>
+      <a class="btn" href="https://wa.me/254724690381?text=Hi%2C%20I%20have%20paid%20via%20PayPal%20for%20Matches%20Killer%20Bot.%20Here%20is%20my%20screenshot." target="_blank">I’ve Paid via PayPal – Send Screenshot</a>
+    </div>
+  </div>
+
+  <!-- 💲 Floating Dollar Signs Around Edges -->
+  <script>
+    const colors = ['#22c55e', '#facc15', '#3b82f6', '#ec4899'];
+    const emojis = ['💲', '💵', '💰', '🪙'];
+    const positions = [
+      { top: '5%', left: '2%' },
+      { top: '10%', right: '5%' },
+      { top: '50%', left: '0%' },
+      { bottom: '10%', right: '10%' },
+      { bottom: '5%', left: '3%' },
+      { top: '25%', right: '0%' }
+    ];
+
+    positions.forEach((pos, i) => {
+      const el = document.createElement('div');
+      el.className = 'floating-dollar';
+      el.textContent = emojis[i % emojis.length];
+      Object.assign(el.style, pos);
+      el.style.color = colors[i % colors.length];
+      el.style.fontSize = (22 + Math.random() * 10) + 'px';
+      document.body.appendChild(el);
+    });
+  </script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254724690381" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
